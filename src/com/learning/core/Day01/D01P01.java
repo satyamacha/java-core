@@ -1,4 +1,6 @@
-package Day01;
+package com.learning.core.Day01;
+
+
 
 class Book {
     private String bookTitle;
@@ -44,3 +46,4 @@ public class D01P01 {
         showBooks(javaProgrammingBook);
     }
 }
+
