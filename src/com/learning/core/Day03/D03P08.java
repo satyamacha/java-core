@@ -16,24 +16,22 @@ Scanner scanner = new Scanner(System.in);
 
     public static int minDeletionsToPalindrome(String str) {
         int n = str.length();
-        // Calculate the longest palindromic subsequence (LPS) using dynamic programming
         int[][] dp = new int[n][n];
         for (int i = 0; i < n; i++) {
-            dp[i][i] = 1; // Base case: Single character is always a palindrome of length 1
+            dp[i][i] = 1; 
         }
         for (int len = 2; len <= n; len++) {
             for (int i = 0; i < n - len + 1; i++) {
                 int j = i + len - 1;
                 if (str.charAt(i) == str.charAt(j) && len == 2) {
-                    dp[i][j] = 2; // Two identical characters form a palindrome of length 2
+                    dp[i][j] = 2; 
                 } else if (str.charAt(i) == str.charAt(j)) {
-                    dp[i][j] = dp[i + 1][j - 1] + 2; // Recurrence relation: Add 2 to the diagonal value
+                    dp[i][j] = dp[i + 1][j - 1] + 2; 
                 } else {
-                    dp[i][j] = Math.max(dp[i][j - 1], dp[i + 1][j]); // Maximum of left and bottom cell
+                    dp[i][j] = Math.max(dp[i][j - 1], dp[i + 1][j]); 
                 }
             }
         }
-        // Minimum deletions = Length of string - Length of LPS
         return n - dp[0][n - 1];
     }
 }

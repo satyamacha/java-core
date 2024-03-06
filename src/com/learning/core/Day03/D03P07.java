@@ -23,7 +23,6 @@ public class D03P07 {
         List<String> subsequences = new ArrayList<>();
         int n = str.length();
         
-        // Generate subsequences of all lengths
         for (int length = 1; length <= n; length++) {
             generateSubsequencesHelper(str, 0, "", length, subsequences);
         }
@@ -41,10 +40,8 @@ public class D03P07 {
             return;
         }
         
-        // Include the current character
         generateSubsequencesHelper(str, index + 1, current + str.charAt(index), length - 1, subsequences);
         
-        // Exclude the current character
         generateSubsequencesHelper(str, index + 1, current, length, subsequences);
     }
 }

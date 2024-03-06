@@ -26,14 +26,14 @@ public class D03P04 {
     }
     
     public static int findFirstRepeatingElementIndex(int[] arr) {
-        int[] visited = new int[100001]; // Assuming elements are within this range
-        int minIndex = -1; // Initialize with -1 as no repeating element found yet
+        int[] visited = new int[100001]; 
+        int minIndex = -1; 
         
         for (int i = arr.length - 1; i >= 0; i--) {
             if (visited[arr[i]] != 0) {
                 minIndex = visited[arr[i]] - 1;
             } else {
-                visited[arr[i]] = i + 1; // Store index + 1 to distinguish from default value 0
+                visited[arr[i]] = i + 1; 
             }
         }
         
