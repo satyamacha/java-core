@@ -29,7 +29,6 @@ public class D03P02 {
             }
         }
 
-        // Display the result
         if (found1 && found2) {
             System.out.println("It's Bingo");
         } else {
