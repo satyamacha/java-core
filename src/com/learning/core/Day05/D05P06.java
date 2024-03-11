@@ -61,7 +61,6 @@ public class D05P06 {
         Scanner scanner = new Scanner(System.in);
         TreeSet<Person> personSet = new TreeSet<>();
 
-        // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter details for person " + i + ":");
             System.out.print("ID: ");
@@ -78,7 +77,6 @@ public class D05P06 {
             personSet.add(new Person(id, name, age, salary));
         }
 
-        // Printing details of persons whose age is greater than 25
         System.out.println("Persons whose age is greater than 25:");
         for (Person person : personSet) {
             if (person.getAge() > 25) {

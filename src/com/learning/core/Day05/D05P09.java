@@ -60,7 +60,6 @@ public class D05P09 {
         Scanner scanner = new Scanner(System.in);
         TreeSet<Person> personSet = new TreeSet<>();
 
-        // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter details for person " + i + ":");
             System.out.print("ID: ");
@@ -77,13 +76,11 @@ public class D05P09 {
             personSet.add(new Person(id, name, age, salary));
         }
 
-        // Calculate the sum of all salaries
         double totalSalary = 0;
         for (Person person : personSet) {
             totalSalary += person.getSalary();
         }
 
-        // Printing the sum of all salaries
         System.out.println((int) totalSalary);
     }
 }

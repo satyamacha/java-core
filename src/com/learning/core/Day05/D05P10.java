@@ -61,7 +61,6 @@ public class D05P10 {
         Scanner scanner = new Scanner(System.in);
         TreeSet<Person> personSet = new TreeSet<>();
 
-        // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter details for person " + i + ":");
             System.out.print("ID: ");
@@ -78,7 +77,6 @@ public class D05P10 {
             personSet.add(new Person(id, name, age, salary));
         }
 
-        // Finding and printing the first person whose name starts with "j"
         for (Person person : personSet) {
             if (person.getName().toLowerCase().startsWith("j")) {
                 System.out.println("First person whose name starts with 'j': " + person);

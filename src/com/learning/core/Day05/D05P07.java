@@ -60,7 +60,6 @@ public class D05P07 {
         Scanner scanner = new Scanner(System.in);
         TreeSet<Person> personSet = new TreeSet<>();
 
-        // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter details for person " + i + ":");
             System.out.print("ID: ");
@@ -77,7 +76,6 @@ public class D05P07 {
             personSet.add(new Person(id, name, age, salary));
         }
 
-        // Printing id, name, and salary of each person
         for (Person person : personSet) {
             System.out.printf("%d %s %.1f\n", person.getId(), person.getName(), person.getSalary());
         }
