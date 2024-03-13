@@ -33,7 +33,8 @@ Scanner scanner = new Scanner(System.in);
     public static List<List<Integer>> findCombinations(int[] nums, int k) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> current = new ArrayList<>();
-        Arrays.sort(nums); 
+        Arrays.sort(nums); // Sort the array to handle duplicates
+        
         backtrack(nums, k, 0, current, result);
         
         return result;

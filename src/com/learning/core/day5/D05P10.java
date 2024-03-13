@@ -1,5 +1,4 @@
 package com.learning.core.Day05;
-
 import java.util.*;
 
 class Person implements Comparable<Person> {
@@ -33,7 +32,7 @@ class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "id=" + id + ", name='" + name + "', age=" + age + ", salary=" + salary;
+        return "id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary;
     }
 
     @Override
@@ -56,11 +55,13 @@ class Person implements Comparable<Person> {
         return Integer.compare(this.id, other.id);
     }
 }
-public class D05P06 {
+
+public class D05P10 {
   public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         TreeSet<Person> personSet = new TreeSet<>();
 
+        // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter details for person " + i + ":");
             System.out.print("ID: ");
@@ -77,10 +78,11 @@ public class D05P06 {
             personSet.add(new Person(id, name, age, salary));
         }
 
-        System.out.println("Persons whose age is greater than 25:");
+        // Finding and printing the first person whose name starts with "j"
         for (Person person : personSet) {
-            if (person.getAge() > 25) {
-                System.out.println(person);
+            if (person.getName().toLowerCase().startsWith("j")) {
+                System.out.println("First person whose name starts with 'j': " + person);
+                break;
             }
         }
     }

@@ -29,23 +29,27 @@ class Product4 {
 
 public class D05P04 {
     public static void main(String[] args) {
+        // Create a HashSet with predefined information of four products
         HashSet<Product4> productSet = new HashSet<>();
         productSet.add(new Product4("P001", "DS Automobile"));
         productSet.add(new Product4("P002", "Dodge Viper ACR"));
         productSet.add(new Product4("P003", "Chevrolette Corvette Grand Sport"));
         productSet.add(new Product4("P004", "Lamborgini SVJ Roadster"));
 
+        // Ask the user to input a product ID and product name
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter P00 and then product ID without space: ");
         String userProductId = scanner.nextLine();
         System.out.print("Enter Car Name from Asphalt 9 : ");
         String userProductName = scanner.nextLine();
 
+        // Search for the user-input product in the HashSet
         searchProduct(userProductId, userProductName, productSet);
 
         scanner.close();
     }
 
+    // Function to search for a particular product in the HashSet
     private static void searchProduct(String userProductId, String userProductName, HashSet<Product4> productSet) {
         Product4 searchProduct = new Product4(userProductId, userProductName);
 

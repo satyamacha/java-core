@@ -32,7 +32,7 @@ class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary;
+        return "ID: " + id + ", Name: " + name + ", Age: " + age + ", Salary: " + salary;
     }
 
     @Override
@@ -55,12 +55,12 @@ class Person implements Comparable<Person> {
         return Integer.compare(this.id, other.id);
     }
 }
-
-public class D05P10 {
+public class D05P09 {
   public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         TreeSet<Person> personSet = new TreeSet<>();
 
+        // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter details for person " + i + ":");
             System.out.print("ID: ");
@@ -77,11 +77,13 @@ public class D05P10 {
             personSet.add(new Person(id, name, age, salary));
         }
 
+        // Calculate the sum of all salaries
+        double totalSalary = 0;
         for (Person person : personSet) {
-            if (person.getName().toLowerCase().startsWith("j")) {
-                System.out.println("First person whose name starts with 'j': " + person);
-                break;
-            }
+            totalSalary += person.getSalary();
         }
+
+        // Printing the sum of all salaries
+        System.out.println((int) totalSalary);
     }
 }

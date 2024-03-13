@@ -19,11 +19,13 @@ public class D05P03 {
   public static void main(String[] args) {
         HashSet<Product> productSet = new HashSet<>();
 
+        // Predefined information of 4 products
         productSet.add(new Product("P001", "Maruti 800"));
         productSet.add(new Product("P002", "Maruti Zen"));
         productSet.add(new Product("P003", "Maruti Dezire"));
         productSet.add(new Product("P004", "Maruti Alto"));
 
+        // Printing details of all products
         for (Product product : productSet) {
             System.out.println(product);
         }
