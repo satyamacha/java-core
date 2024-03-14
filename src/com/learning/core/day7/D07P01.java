@@ -1,4 +1,4 @@
-package com.learning.core.Day07;
+package com.learning.core.day7;
 
 class ArrayStack {
     private static final int MAX_SIZE = 100;

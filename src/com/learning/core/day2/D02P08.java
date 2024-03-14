@@ -1,4 +1,4 @@
-package com.learning.core.Day02;
+package com.learning.core.day2;
 
 
 import java.util.Scanner;
@@ -7,9 +7,9 @@ public class D02P08 {
 	public static void main(String[] args)
 	{
 		Scanner sc=new Scanner(System.in);
-        System.out.println("Enter L: ");
+        System.out.println("Enter Left integer in the range: ");
         int L = sc.nextInt();
-        System.out.println("Enter R: ");
+        System.out.println("Enter Right integer in the range: ");
         int R = sc.nextInt();
         int sum=0;
         for(int i=L;i<=R;i++)

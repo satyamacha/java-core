@@ -1,15 +1,14 @@
-
-package com.learning.core.Day06;
+package com.learning.core.day6;
 import java.util.Hashtable;
 import java.util.Scanner;
 
-class Employee {
+class Employee11 {
     private int id;
     private String name;
     private String department;
     private String designation;
 
-    public Employee(int id, String name, String department, String designation) {
+    public Employee11(int id, String name, String department, String designation) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -34,7 +33,7 @@ class Employee {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-        Employee employee = (Employee) obj;
+        Employee11 employee = (Employee11) obj;
         return id == employee.id;
     }
 }

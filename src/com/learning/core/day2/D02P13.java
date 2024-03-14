@@ -1,4 +1,4 @@
-package com.learning.core.Day02;
+package com.learning.core.day2;
 
 import java.util.Scanner;
 
@@ -11,6 +11,8 @@ public class D02P13 {
         
         long factorial = calculateFactorial(number);
         System.out.println("Factorial of " + number + " is " + factorial);
+    
+    scanner.close();
     }
     
     public static long calculateFactorial(int number) {

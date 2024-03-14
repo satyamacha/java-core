@@ -1,4 +1,4 @@
-package com.learning.core.Day05;
+package com.learning.core.day5;
 import java.util.HashSet;
 
 class Product {

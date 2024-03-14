@@ -1,4 +1,4 @@
-package com.learning.core.Day02;
+package com.learning.core.day2;
 
 import java.util.Scanner;
 
@@ -11,6 +11,7 @@ public class D02P17 {
         
         System.out.println("Prime numbers from 1 to " + n + " are :");
         printPrimes(n);
+        scanner.close();
     }
     
     public static void printPrimes(int n) {

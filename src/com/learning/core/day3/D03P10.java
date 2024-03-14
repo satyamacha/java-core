@@ -1,4 +1,4 @@
-package com.learning.core.Day03;
+package com.learning.core.day3;
 
 
 import java.util.Scanner;
@@ -12,7 +12,8 @@ Scanner scanner = new Scanner(System.in);
         
         int longestPrefixSuffixLength = findLongestPrefixSuffixLength(s);
         System.out.println("Length of the longest prefix which is also a suffix: " + longestPrefixSuffixLength);
-    }
+        scanner.close();
+	}
     
     public static int findLongestPrefixSuffixLength(String s) {
         int n = s.length();

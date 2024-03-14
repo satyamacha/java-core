@@ -1,5 +1,4 @@
-
-package com.learning.core.Day06;
+package com.learning.core.day6;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;

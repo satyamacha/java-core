@@ -1,4 +1,4 @@
-package com.learning.core.Day02;
+package com.learning.core.day2;
 
 import java.util.Scanner;
 
@@ -13,6 +13,7 @@ public class D02P16 {
         for (int i = 0; i < n; i++) {
             System.out.print(fibonacci(i) + " ");
         }
+    scanner.close();
     }
     
     public static int fibonacci(int n) {

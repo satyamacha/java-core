@@ -1,4 +1,4 @@
-package com.learning.core.Day02;
+package com.learning.core.day2;
 
 import java.util.Scanner;
 
@@ -21,5 +21,6 @@ public class D02P12 {
             }
             System.out.println();
         }
+        scanner.close();
     }
 }

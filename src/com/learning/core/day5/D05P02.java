@@ -1,4 +1,4 @@
-package com.learning.core.Day05; 
+package com.learning.core.day5;
  
 import java.util.ArrayList; 
 import java.util.List; 
@@ -19,8 +19,7 @@ public class D05P02
   System.out.println(al); 
   System.out.println("Enter the name to search"); 
   String search=sc.nextLine(); 
-   
-   
+ 
  } 
  
 }

@@ -1,13 +1,11 @@
-package com.learning.core.Day01;
+package com.learning.core.day1;
 
 
 
-//representing medicine info
 interface MedicineInfo {
  void displayLabel();
 }
 
-//Classes for MedicineInfo 
 class Tablet implements MedicineInfo {
  @Override
  public void displayLabel() {

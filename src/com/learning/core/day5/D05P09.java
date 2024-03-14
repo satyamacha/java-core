@@ -1,13 +1,13 @@
-package com.learning.core.Day05;
+package com.learning.core.day5;
 import java.util.*;
 
-class Person implements Comparable<Person> {
+class Person9 implements Comparable<Person9> {
     private int id;
     private String name;
     private int age;
     private double salary;
 
-    public Person(int id, String name, int age, double salary) {
+    public Person9(int id, String name, int age, double salary) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -46,19 +46,19 @@ class Person implements Comparable<Person> {
             return true;
         if (obj == null || getClass() != obj.getClass())
             return false;
-        Person person = (Person) obj;
+        Person9 person = (Person9) obj;
         return id == person.id;
     }
 
     @Override
-    public int compareTo(Person other) {
+    public int compareTo(Person9 other) {
         return Integer.compare(this.id, other.id);
     }
 }
 public class D05P09 {
   public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        TreeSet<Person> personSet = new TreeSet<>();
+        TreeSet<Person9> personSet = new TreeSet<>();
 
         // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
@@ -74,12 +74,12 @@ public class D05P09 {
             double salary = scanner.nextDouble();
             scanner.nextLine(); // Consume newline
 
-            personSet.add(new Person(id, name, age, salary));
+            personSet.add(new Person9(id, name, age, salary));
         }
 
         // Calculate the sum of all salaries
         double totalSalary = 0;
-        for (Person person : personSet) {
+        for (Person9 person : personSet) {
             totalSalary += person.getSalary();
         }
 

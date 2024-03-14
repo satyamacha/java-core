@@ -1,4 +1,4 @@
-package com.learning.core.Day07;
+package com.learning.core.day7;
 import java.util.Scanner;
 class CustomStack {
     private char[] array;

@@ -1,13 +1,13 @@
-package com.learning.core.Day05;
+package com.learning.core.day5;
 import java.util.*;
 
-class Person implements Comparable<Person> {
+class Person7 implements Comparable<Person7> {
     private int id;
     private String name;
     private int age;
     private double salary;
 
-    public Person(int id, String name, int age, double salary) {
+    public Person7(int id, String name, int age, double salary) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -46,19 +46,25 @@ class Person implements Comparable<Person> {
             return true;
         if (obj == null || getClass() != obj.getClass())
             return false;
-        Person person = (Person) obj;
+        Person7 person = (Person7) obj;
         return id == person.id;
     }
 
     @Override
-    public int compareTo(Person other) {
+    public int compareTo(Person7 other) {
         return Integer.compare(this.id, other.id);
     }
+
+//	@Override
+	//public int compareTo(Person arg0) {
+		// TODO Auto-generated method stub
+		//return 0;
+	//}
 }
 public class D05P07 {
   public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        TreeSet<Person> personSet = new TreeSet<>();
+        TreeSet<Person9> personSet = new TreeSet<>();
 
         // Taking input for 6 persons
         for (int i = 1; i <= 6; i++) {
@@ -74,11 +80,11 @@ public class D05P07 {
             double salary = scanner.nextDouble();
             scanner.nextLine(); // Consume newline
 
-            personSet.add(new Person(id, name, age, salary));
+            personSet.add(new Person9(id, name, age, salary));
         }
 
         // Printing id, name, and salary of each person
-        for (Person person : personSet) {
+        for (Person9 person : personSet) {
             System.out.printf("%d %s %.1f\n", person.getId(), person.getName(), person.getSalary());
         }
     }

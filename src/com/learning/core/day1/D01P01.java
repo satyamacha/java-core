@@ -1,4 +1,4 @@
-package com.learning.core.Day01;
+package com.learning.core.day1;
 
 
 
@@ -6,22 +6,18 @@ class Book {
     private String bookTitle;
     private double bookPrice;
 
-    // Get for bookTitle
     public String getBookTitle() {
         return bookTitle;
     }
 
-    // Set for bookTitle
     public void setBookTitle(String bookTitle) {
         this.bookTitle = bookTitle;
     }
 
-    // Get for bookPrice
     public double getBookPrice() {
         return bookPrice;
     }
 
-    // Set for bookPrice
     public void setBookPrice(double bookPrice) {
         this.bookPrice = bookPrice;
     }
@@ -29,13 +25,12 @@ class Book {
 
 public class D01P01 {
     public static Book createBooks(String title, double price) {
-        Book book = new Book();         // create a object for book
+        Book book = new Book();         
         book.setBookTitle(title);
         book.setBookPrice(price);
         return book;
     }
 
-    // displaying book information
     public static void showBooks(Book book) {
         System.out.println("Book Title: " + book.getBookTitle() + " and Price: " + book.getBookPrice());
     }

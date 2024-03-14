@@ -1,4 +1,4 @@
-package com.learning.core.Day02;
+package com.learning.core.day2;
 
 import java.util.Scanner;
 
@@ -14,6 +14,7 @@ public class D02P14 {
         
         long result = calculatePower(base, exponent);
         System.out.println(base + " power " + exponent + " is : "+  result);
+    scanner.close();
     }
     
     public static long calculatePower(int base, int exponent) {

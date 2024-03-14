@@ -1,4 +1,4 @@
-package com.learning.core.Day06;
+package com.learning.core.day6;
 
 import java.util.Hashtable;
 import java.util.Scanner;
